@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+lerna-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# NPM lock file (Yarn lock file used instead)
+package-lock.json
+
+# Coverage directories
+coverage
+.codacy-coverage
+.nyc_output
+
+# Dependency directories
+node_modules
+.pnp*
+
+# TypeScript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn
+.yarn
+.yarn-integrity
+
+# Serverless directories
+.serverless
+
+# VS Code settings
+.vscode
+
+# General OS
+.DS_Store
+
+# Debug
+.debug
+
+# Data
+data*

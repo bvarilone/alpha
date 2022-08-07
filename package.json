@@ -1,0 +1,39 @@
+{
+  "name": "alpha",
+  "type": "module",
+  "packageManager": "yarn@3.2.2",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": "Brandon Varilone",
+  "scripts": {
+    "prepare": "yarn husky install",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "pretest": "yarn format:check && yarn lint:check",
+    "test": "mocha",
+    "cover": "nyc --reporter=lcov mocha && nyc check-coverage --lines 100"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chance": "^1.1.8",
+    "commitlint": "^17.0.3",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.7.1",
+    "semantic-release": "^19.0.3",
+    "sinon": "^14.0.0"
+  }
+}
